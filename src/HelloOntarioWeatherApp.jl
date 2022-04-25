@@ -14,19 +14,19 @@ end
 end
 
 
-function launchServer(port)
+# function launchServer(port)
 
-  Genie.config.run_as_server = true
-  Genie.config.server_host = "0.0.0.0"
-  Genie.config.server_port = port
+#   Genie.config.run_as_server = true
+#   Genie.config.server_host = "0.0.0.0"
+#   Genie.config.server_port = port
 
-  println("port set to $(port)")
+#   println("port set to $(port)")
 
-  route("/") do
-      "Hi there!"
-  end
+#   route("/") do
+#       "Hi there!"
+#   end
 
-  Genie.AppServer.startup()
-end
+#   Genie.AppServer.startup()
+# end
 
-launchServer(parse(Int, ARGS[1]))
+# launchServer(parse(Int, ARGS[1]))
