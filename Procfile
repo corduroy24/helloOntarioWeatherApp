@@ -1,2 +1,1 @@
-webl: julia --project src/HelloOntarioWeatherApp.jl
-web: julia --project src/HelloOntarioWeatherApp.jl $PORT
+web: julia --project src/HelloOntarioWeatherApp.jl %PORT%
